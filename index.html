@@ -48,14 +48,18 @@
         </div>
       </section>
       <section class="output">
-        <div class="no-texto no-display">
+        <div class="no-texto">
           <img src="img/output.svg" alt="Sin-texto" />
           <p>Ningun mensaje fue encontrado</p>
           <p>Ingresa el texto que deseas encriptar o desencriptar</p>
         </div>
-        <div class="texto-desencriptado">
-          <div class="mostrar-texto-desencriptado"></div>
-          <button class="copiar">Copiar!</button>
+        <div class="texto-desencriptado no-display">
+          <textarea
+            class="mostrar-texto-desencriptado"
+            value=""
+            readonly
+          ></textarea>
+          <button class="copiar" onclick="copiar()">Copiar!</button>
         </div>
       </section>
     </main>

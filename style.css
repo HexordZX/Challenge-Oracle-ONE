@@ -78,10 +78,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .no-texto p:first-of-type {
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .no-texto img {
@@ -97,6 +99,13 @@ main {
 
 .mostrar-texto-desencriptado {
   flex-grow: 1;
+  resize: none;
+  border-style: none;
+  height: auto;
+}
+
+.mostrar-texto-desencriptado:focus-visible {
+  outline: none;
 }
 
 /* Botones */
@@ -115,6 +124,11 @@ button:hover {
   background-color: #2f4f7d;
   color: white;
 }
+
+.copiar {
+  margin-top: 1rem;
+}
+
 .no-display {
   display: none;
 }
@@ -131,6 +145,7 @@ footer {
   display: block;
   width: 100%;
   text-align: center;
+  color: #0b0467;
 }
 
 @media screen and (max-width: 480px) {
@@ -147,6 +162,7 @@ footer {
   }
 
   .mostrar-texto-desencriptado {
+    width: auto;
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
